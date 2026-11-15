@@ -5,10 +5,9 @@ WEB Coding project
 אופיר טל 209707504
 יונתן צור 211460795
 | שיטת HTTP | כתובת API | תיאור ומה מוחזר |
-| :--- | :--- | :--- |
-| **GET** | `/` | הודעת סטטוס שהשרת פעיל |
-| **GET** | `/api/matches` | מערך של כל המשחקים הפתוחים |
-| **GET** | `/api/matches/:id` | פרטי משחק ספציפי לפי מזהה |
-| **GET** | `/api/pitches` | מערך של כל מגרשי הכדורגל |
-| **GET** | `/api/pitches/:id` | פרטי מגרש ספציפי לפי מזהה |
-| **GET** | * (כתובת לא קיימת) | אובייקט שגיאה 404 (Not Found) |
+מה מוחזר	כתובת API	שם הפונקציה של הcontroller	שיטת HTTP
+מערך של כל המשחקים הפתוחים 	/api/matches	matchesController.getAllMatches	Get 
+פרטי משחק ספציפי לפי מזהה	/api/matches/:id	matchesController.getMatchById	Get 
+הודעת הצלחה על יצירת משחק 	/api/matches	matchesController.createMatch	Post  
+הודעת הצלחה על עדכון משחק 	/api/matches/:id	matchesController.updateMatch	Put 
+הודעת הצלחה על מחיקת משחק 	/api/matches/:id	matchesController.deleteMatch	Delete 
